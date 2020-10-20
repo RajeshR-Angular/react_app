@@ -5,18 +5,15 @@ import './App.css';
 import { Route, Switch } from 'react-router-dom'
 
 import Homepage from './pages/homepage/homepage.component';
+import ShopComponent from './pages/shop/shop.component';
 
-
-const HatsPage = (props) => {
-  return <div> Hats page  </div>
-}
 
 function App() {
   return (
     <div className="e-com">
       <Switch>
         <Route path="/" component={Homepage} exact />
-        <Route path="/hats" component={HatsPage} exact />
+        <Route path="/shop" component={ShopComponent} exact />
         <Route path="*" component={() => "404 page found"} />
       </Switch>
     </div>
